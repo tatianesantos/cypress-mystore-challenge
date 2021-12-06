@@ -1,4 +1,3 @@
-//Import de Page
 import contactUsPages from '../../support/pages/contactUsPages';
 import homePages from '../../support/pages/homePages';
 import contactData from '../../fixtures/contactData.json';
