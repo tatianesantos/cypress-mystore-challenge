@@ -12,7 +12,7 @@ describe('ContactUs', () => {
     beforeEach(()=>{
         cy.visit(Cypress.config('url'));
     })
-    it('C2270 ContactUs Complete Flow',() => {
+    it('C2270 - ContactUs Complete Flow',() => {
        //Arrange
        contactData.orderReference = "order2";
 
@@ -29,7 +29,7 @@ describe('ContactUs', () => {
        contactUsPages.checkSuccessMessage();
 
     });
-    it('C2265 Subject Heading - Customer Service Message',() => {
+    it('C2265 - Subject Heading - Customer Service Message',() => {
         //Act
         contactUsPages.clickContactUs();
         contactUsPages.selectSubjectHeading(subjectHeading);
@@ -38,7 +38,7 @@ describe('ContactUs', () => {
         contactUsPages.checkSelectSubjectMessage(subjectHeading);
  
      });
-     it('C2266 Subject Heading - Webmaster Message',() => {
+     it('C2266 - Subject Heading - Webmaster Message',() => {
         //Arrange
         subjectHeading = 'Webmaster';
 
@@ -50,7 +50,7 @@ describe('ContactUs', () => {
         contactUsPages.checkSelectSubjectMessage(subjectHeading);
  
      });
-     it('C2267 Email address - Invalid Format',() => {
+     it('C2267 - Email address - Invalid Format',() => {
         //Arrange
         subjectHeading = 'Webmaster';
         email = "email123test";
@@ -65,7 +65,7 @@ describe('ContactUs', () => {
         contactUsPages.checkEmailFormError();
  
      });
-     it('C2268 Order Reference - Invalid Data',() => {
+     it('C2268 - Order Reference - Invalid Data',() => {
         //Arrange
         orderReference = "#%$*ˆ";
  
@@ -82,7 +82,7 @@ describe('ContactUs', () => {
         contactUsPages.checkErrorMessage('order');
  
      });
-     it('C2269 Send blank on the Email address',() => {
+     it('C2269 - Send blank on the Email address',() => {
         //Arrange
         subjectHeading = 'Webmaster';
         email = " ";
@@ -100,7 +100,7 @@ describe('ContactUs', () => {
         contactUsPages.checkErrorMessage('blankEmail');
  
      });
-     it('C2277 Access Contact Us through the Information Menu',() => {
+     it('C2277 - Access Contact Us through the Information Menu',() => {
         //Act
         contactUsPages.clickContactUsTroughInformation();
  
@@ -108,7 +108,7 @@ describe('ContactUs', () => {
         contactUsPages.checkContactUsPage();
  
      });
-     it('C2278 Email address - Invalid Format Send Form',() => {
+     it('C2278 - Email address - Invalid Format Send Form',() => {
         //Arrange
         subjectHeading = 'Webmaster';
         email = "email123test";
@@ -126,7 +126,7 @@ describe('ContactUs', () => {
         contactUsPages.checkErrorMessage('email');
  
      });
-     it('C2279 Send Message with Space and without Text',() => {
+     it('C2279 - Send Message with Space and without Text',() => {
         //Arrange
         subjectHeading = 'Webmaster';
         message = " ";
@@ -145,7 +145,7 @@ describe('ContactUs', () => {
  
      });
 
-     it('C2280 No Send Message On Contact Form',() => {
+     it('C2280 - No Send Message On Contact Form',() => {
         //Arrange
         subjectHeading = 'Webmaster';
         message = " ";
@@ -163,7 +163,7 @@ describe('ContactUs', () => {
  
      });
 
-     it('C2281 Send Subject Heading - No select choose option',() => {
+     it('C2281 - Send Subject Heading - No select choose option',() => {
         //Arrange
         subjectHeading = 'noSubject';
  
@@ -180,7 +180,7 @@ describe('ContactUs', () => {
         contactUsPages.checkErrorMessage('noSubject');
  
      });
-     it('C2282 Check Back To Home',() => {
+     it('C2282 - Check Back To Home',() => {
        //Arrange
        subjectHeading = 'Webmaster';
 
