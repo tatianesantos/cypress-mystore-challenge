@@ -12,7 +12,7 @@ The project was create to automate my-store website.
 * [Node.js](https://nodejs.org/en/)
 * [Mochawesome - 7.0.1](https://www.npmjs.com/package/mochawesome)
 
-### ⚙️ The Architecture UI
+### ⚙️ The Architecture
 ```
 MYSTORE_CYPRESS/
   ├─  cypress/
@@ -67,8 +67,8 @@ MYSTORE_CYPRESS/
 * Open VSCode and proceed with the follow commands:
  1. Open project inside VSCode 
  2. Open Terminal
-    Execute - npm install
-    Execute - npx cypress open
+    - Execute - npm install
+    - Execute - npx cypress open
 
 The Cypress will open with the specs listed.
 To execute tests click inside the spec displayed, the tests will start to run.
@@ -79,9 +79,8 @@ From the project root folder, run the command below to get local results:
   ```
   npm run cypress:run
   ```
-The 
-* Run CrossBrowser tests
-The commands below execute tests for the correspondent browser:
+
+* Run CrossBrowser tests - The commands below execute tests for the correspondent browser:
   ```
   npm run cy:run:chrome
   npm run cy:run:firefox
@@ -91,9 +90,9 @@ At the end of the execution the results artifacts are available.
 
 ### 📊 Getting test report and screenshots
 -----------------------
-Access the reports ./reports
-Access the hmtm report ./reports/mochareports
-Access the screenshots ./screenshots
+- Reports ./reports
+- HTML report ./reports/mochareports
+- Screenshots ./screenshots
 
 ### Mochawesome configuration
 -----------------------
@@ -110,5 +109,5 @@ Access the screenshots ./screenshots
 ### Test Execution Option
 -----------------------
 It's possible to run a specific test, to do this include the option .only after the it signature.
-    it.only('',() => {
+- it.only('',() => {
  
