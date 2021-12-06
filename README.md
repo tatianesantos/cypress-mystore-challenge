@@ -15,11 +15,16 @@ The project was create to automate my-store website.
 ### ⚙️ The Architecture UI
 ```
 MYSTORE_CYPRESS/
-  ├─  test/
+  ├─  cypress/
   │        │
   │        ├── fixtures/
-  │        │      
+  │        │           
+  │        ├── integration/
+  │        │   └── tests/
+  │        │         └── <name>.spec.js 
   │        │  
+  │        ├── plugins/
+  │        │ 
   │        ├── support/
   │        │   └── <name>Pages.js    
   │        │   └── <name>Flows.js 
@@ -31,10 +36,6 @@ MYSTORE_CYPRESS/
   │        │ 
   │        ├── videos/    
   │        │    
-  │        │           
-  │        ├── integration/
-  │        │   └── tests/
-  │        │         └── <name>.spec.js
   │        │      
   └        └── README.md
 
