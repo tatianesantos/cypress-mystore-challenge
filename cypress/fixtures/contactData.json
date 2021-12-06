@@ -1,0 +1,6 @@
+{
+  "email": "project@mystore.com",
+  "orderReference": "order1",
+  "message": "Please check the order number!",
+  "filepath": "/text.txt"
+}

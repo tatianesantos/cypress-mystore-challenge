@@ -1,0 +1,20 @@
+{
+  "url": "http://automationpractice.com/index.php",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "host": "https://tatianesantos.testrail.io",
+    "username": "tatianesantos",
+    "password": "Testr@ail1",
+    "projectId": 3,
+    "suiteId": 4,
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "projectId": "gryru4"
+}
