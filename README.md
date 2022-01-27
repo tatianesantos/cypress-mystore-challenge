@@ -110,7 +110,3 @@ At the end of the execution the results artifacts are available.
 -----------------------
 It's possible to run a specific test, to do this include the option .only after the it signature.
 - it.only('',() => {
- 
-### Automation Scenarios
-The test name scenarios start with TestRail testcase Id to link the automation test to the specification.
-* [Click to open TestRail project](https://tatianesantos.testrail.io/index.php?/projects/overview/3)
